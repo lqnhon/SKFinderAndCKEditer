@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script src="https://cdn.ckeditor.com/ckeditor5/11.2.0/classic/ckeditor.js"></script>
+<script src="/ckfinder/ckfinder.js"></script>
+@section scripts{
+
+    <script>
+        var editor = CKEDITOR.replace('editor');
+        CKFinder.setupCKEditor(editor, '/ckfinder/');
+    </script>
+}
+<div id="editor" name="editor"></div>
