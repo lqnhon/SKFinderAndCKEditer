@@ -10,6 +10,7 @@ namespace SKFinderAndCKEditer.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Name = "Luong Quang Nhon";
             return View();
         }
 
